@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.toggel {
+    display: none;
+    color: white;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 1rem;  
+}
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.video-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    width: 100%;
+    position: absolute;
+}
+nav {
+    width: 100%;
+    display: flex;
+    max-width: 50rem;
+    justify-content: space-between;
+    position: absolute;  
+    top: 0;
+    left: 0;
+    position: fixed;
+} 
+
+#foodi {
+    font-size: 4rem;
+    font-family: 'Square';
+    text-decoration: none;
+    color: rgb(255, 241, 241);
+    margin: 2rem;
+    padding: 0.7rem 1.75rem;
+    line-height: 3rem;
+    margin-left: 2rem; 
+    float: left;
+    transition: 0.5s;   
+}
+ #foodi:hover {
+    color: transparent;
+    cursor: pointer;
+    -webkit-text-stroke: 2px rgb(183, 217, 255);
+}
+
+ul {
+    display: flex;
+    justify-items: center;
+    margin: 2rem 25rem;
+} 
+ul li { 
+    list-style: none;
+    font-size: 2rem;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    display: inline-block;
+}
+ul a {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+} 
+ul a:hover {
+    color: rgb(248, 246, 246);
+    background-color: rgb(102, 196, 240);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+.social {
+    float: right;
+    margin-right: 5%;
+}
+.top-social {
+    display: flex;
+    position: relative;
+    margin: 2rem; 
+}
+.top-social a {
+    color: rgb(231, 221, 221);
+}
+.top-social a:hover {
+    color: rgb(131, 158, 247);
+}
+.social a {
+    color: rgb(236, 227, 235);
+    font-size: 2rem;
+    padding: 0.5rem;   
+}
+.content {
+    text-align: center;
+}
+.content h1 {
+    font-size: 10rem;
+    color: white;
+    font-family: 'Luxurious';
+    transition: 0.5s;
+}
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+.content h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+footer {
+    display: none;
+}
+
+@media (min-width:0) and (max-width: 449px) {
+    label.toggel {
+        display: block;
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+    nav {
+        position: absolute;  
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+
+    }
+    #foodi {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0 1rem;
+        justify-content: right;
+    }
+    ul {
+        display: none;
+    }
+
+    .top-social {
+        display: none;
+    }
+    .section {
+     width: 100%;
+     height: inherit;
+    }
+    .content {
+        text-align: center;
+        margin: 4rem auto;
+    }
+    .content h1 {
+        font-size: 1rem;
+    }
+    .content a {
+        font-size: 1rem;
+        padding: 0.3rem;
+        border-radius: 70%;  
+    }
+/* footer {
+    display: block;
+    margin: 10rem;
+    position: static;
+} */
+
+}
+
+@media (min-width:449px) and (max-width: 779px) {
+    label.toggel {
+        display: block;
+        position: relative;
+    }
+    nav {
+        position: absolute;  
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+    }
+
+    #foodi {
+        font-size: 2rem;
+        margin-right: 4rem;
+        padding: 0;
+        margin-top: 0;
+        justify-content: right;
+    }
+    ul {
+        display: none;
+    }
+
+    .top-social {
+        display: none;
+    }
+    .section {
+     width: 100%;
+     height: inherit;
+    }
+    .content {
+        text-align: center;
+        margin: 6rem 4rem;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content a {
+        font-size: 1rem;
+        padding: 0.3rem;
+        border-radius: 70%;  
+    }
+}
+@media (min-width:779px) and (max-width: 1000px) {
+    label.toggel {
+        display: block;
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+    nav {
+        position: absolute;  
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+
+    }
+    #foodi {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0 1rem;
+        justify-content: right;
+    }
+    ul {
+        display: none;
+    }
+
+    .top-social {
+        display: none;
+    }
+    .section {
+     width: 100%;
+     height: inherit;
+    }
+    .content {
+        text-align: center;
+        margin: 4rem auto;
+    }
+    .content h1 {
+        font-size: 1rem;
+    }
+    .content a {
+        font-size: 1rem;
+        padding: 0.3rem;
+        border-radius: 70%;  
+    }
+
+}
+
+@media (min-width:449px) and (max-width: 779px) {
+    label.toggel {
+        display: block;
+        position: relative;
+    }
+    nav {
+        position: absolute;  
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+    }
+
+    #foodi {
+        font-size: 4rem;
+        margin-right: 2rem;
+        padding: 0;
+        margin-top: 0;
+        justify-content: right;
+    }
+    ul {
+        display: none;
+    }
+
+    .top-social {
+        display: none;
+    }
+    .section {
+     width: 100%;
+     height: inherit;
+    }
+    .content {
+        text-align: center;
+        margin: 6rem 4rem;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content a {
+        font-size: 2rem;
+        padding: 0.3rem;
+        border-radius: 70%;  
+    }
+}
+
+
+
+
+
+
